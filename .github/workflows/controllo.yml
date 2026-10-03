@@ -38,5 +38,5 @@ jobs:
         run: |
           git config user.name "zalando-bot"
           git config user.email "zalando-bot@users.noreply.github.com"
-          git add state.json
+          git add -A
           git diff --cached --quiet || (git commit -m "aggiorna stato" && git push)
